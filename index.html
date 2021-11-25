@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- boostrap css -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Calculadora IMC</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="titulo text-center">Calculadora IMC</h3>
+    <section>
+      <div id="res"></div>
+      <div id="situacion"></div>
+      <hr>
+      <form onsubmit="return false">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">kg</span>            
+          </div>
+          <input type="number" id="txtWeight" class="form-control" placeholder="Peso">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">m</span>            
+          </div>
+          <input type="number" id="txtHeight" class="form-control" placeholder="Altura">
+        </div>
+        <div class="btn-group btn-group-horizontal" data-toggle="buttons">
+          <label class="btn active">
+            <input type="radio" id="rbtnMale" name="gender" checked>
+            <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+            <span>Masculino</span>
+          </label>
+          <label class="btn">
+            <input type="radio" id="rbtnFemale" name="gender">
+            <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+            <span>Feminino</span>
+          </label>
+        </div>
+        <hr>
+        <input type="submit" id="btnCalc" value="Calcular">
+      </form>
+    </section>
+  </div>  
+
+  <!-- script -->
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

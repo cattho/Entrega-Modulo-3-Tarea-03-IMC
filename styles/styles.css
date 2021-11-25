@@ -1,0 +1,73 @@
+:root{
+    --background-body:#EB8967;
+    --blanco:#fff;
+    --negro:#000;
+}
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .container {
+    padding-top: 2%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titulo {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+section {
+  background-color: var(--background-body);
+  font-size: 2em;
+  text-align: center;
+  color: var(--blanco);
+  border-radius: 15px;
+}
+
+#res {
+  padding: 10%;
+}
+
+#btnCalc {
+  color: var(--blanco);
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+#btnCalc:focus {
+  outline-style: none;
+}
+
+#rbtnMale, #rbtnFemale {
+  display: none;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+  color: var(--blanco);
+  display: inline;
+}
+
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+  display: none;
+}
+
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+  display: none;
+}
+
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+  color: var(--negro);
+  display: inline;
+}
+
+label:hover input[type="radio"] ~ i.fa {
+  color: #000;
+}
+
+label span {
+  color: var(--blanco);
+  font-size: 1.2em;
+}
